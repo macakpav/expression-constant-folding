@@ -20,6 +20,7 @@ def post2in_constant_folding(postfix_expression:list[str]):
             paren=resolve_paren(stack.pop())
             stack.append(paren)
 
+    assert len(stack)==1
     return stack[0] if stack else ""
 
 def resolve_operation(arg1:str, op:str, arg2:str):
