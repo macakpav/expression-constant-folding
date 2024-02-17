@@ -11,5 +11,7 @@ Works for fortran-style expression so far, but shoud be easily modifiable for ot
 
 ## Examples:
   .not. .not.a >  2.and..true. .and. ( arr(l2(1),2) .or. .false.)
-gets converted to
+  
+  gets converted to
+  
   a >  2 .and. arr(l2(1),2)
